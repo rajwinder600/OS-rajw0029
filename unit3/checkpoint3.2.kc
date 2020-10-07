@@ -39,7 +39,7 @@ import "string"
 	void test_memory()
 	{
 	unsigned short mem_start = $0800;
-	unsigned short mem_end = $0800;
+	unsigned short mem_end = $7fff;
 	volatile unsigned char *p;
 	bool error = false;
 	for (mem_end = mem_start; mem_end < $7fff && !error; mem_end++)
