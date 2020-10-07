@@ -7,8 +7,7 @@ import "string"
 	const char* COLS = 0xd800;
 	const char BLACK = 0;
 	const char WHITE = 1;
-	char[] message = "rajw0029 operating system starting...";
-	char[] message1 = "testing hardware";
+	
 	
 	unsigned char *current_screen_line = $0400;
 	unsigned char current_screen_x = 0;
@@ -276,7 +275,7 @@ import "string"
 	memset(COLS, WHITE, 40*25);
 	char* sc = SCREEN+40;
 	char* msg = message;
-	char[] msg1=" operating system starting";
+	char[] msg1=" rajw0029 operating system starting...";
 	char[] msg2="testing hardware";
 	print_to_screen(&msg1[0]);
 	print_newline();
