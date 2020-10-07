@@ -7,7 +7,8 @@ import "string"
 	const char* COLS = 0xd800;
 	const char BLACK = 0;
 	const char WHITE = 1;
-	char[] message = "checkpoint 3.2 by ";
+	char[] message = "rajw0029 operating system starting...";
+	char[] message = "testing hardware";
 	
 	unsigned char *current_screen_line = $0400;
 	unsigned char current_screen_x = 0;
@@ -39,7 +40,7 @@ import "string"
 	void test_memory()
 	{
 	unsigned short mem_start = $0800;
-	unsigned short mem_end = $7fff;
+	unsigned short mem_end = $8000;
 	volatile unsigned char *p;
 	bool error = false;
 	for (mem_end = mem_start; mem_end < $7fff && !error; mem_end++)
@@ -58,11 +59,12 @@ import "string"
 	}
 	}
 	}
-	print_to_screen("");
+	print_to_screen("memory found at $");
 	print_hex(mem_start);
 	print_to_screen("-$");
 	print_hex(mem_end);
 	print_newline();
+	print_to_screen("finished testing hardware";
 	}
 	void print_hex(unsigned short value)
 	{
