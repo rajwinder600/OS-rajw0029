@@ -64,7 +64,7 @@ import "string"
 	print_to_screen("-$");
 	print_hex(mem_end);
 	print_newline();
-	print_to_screen("finished testing hardware";
+	print_to_screen("finished testing hardware");
 	}
 	void print_hex(unsigned short value)
 	{
